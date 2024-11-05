@@ -1,0 +1,160 @@
+*{
+    box-sizing : border-box;
+    margin : 0;
+    padding : 0;
+}
+html{
+    font-size : 10px;
+}
+body{
+    background-color : hsla(48, 84%, 43%, 0.185);
+    height : 100vh;
+    width : 100vw;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    font-family: Roboto, Arial;
+}
+.container{
+    display : flex;
+    width : 70vw;
+    height : 80%;
+    box-shadow : 5px 5px 5px hsla(48, 84%, 43%, 0.185);
+    border-radius : 0.75rem;
+}
+.container > div:first-child{
+    width : 40%;
+}
+.container img{
+    height : 100%;
+    object-fit : cover;
+    width : 100%;
+    border-top-left-radius:0.75rem;
+    border-bottom-left-radius: 0.75rem;
+}
+.text-form-container{
+    width : 60%;
+    background-color : rgb(255, 255, 255);
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+}
+.text-container{
+    margin-top : 2rem;
+    height : 30%;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    text-align : center;
+    padding : 0 0.5rem;
+}
+h2{
+    margin-bottom : 1rem;
+    color :hsl(44, 91%, 51%);
+    font-size : 4rem;
+    font-family : Nunito, Arial;
+}
+.text-container p{
+    margin : 0.3rem; 
+    font-size : 1.5rem;
+    color : rgb(100, 98, 98);
+}
+
+.form-container{
+    height : 65%;
+}
+.form-elements{ 
+   width : 100%;
+   box-shadow : 0px 3px 3px hsla(40, 2%, 31%, 0.185);
+   padding : 1rem;
+   margin-top : 0.5rem;
+}
+.form-elements div:not(:last-child){
+    display : inline-block;
+    height : 50px;
+    width : 40%;
+    margin-left : 1rem;
+    margin-top : 1rem;
+}
+
+label{
+    display : block;
+    font-weight: 900;
+    color : rgb(129, 128, 128);
+    font-size : 1.3rem;
+    font-family : Nunito, Arial;
+}
+input{
+    width : 100%;
+    height : 65%;
+    border : 2px solid rgb(72, 70, 70);
+    border-radius : 1rem;
+    text-align : center;
+    color : rgb(91, 90, 90);
+    font-weight : bold;
+
+}
+.form-elements div:last-child{
+    height : 20px;
+    display : flex;
+    align-items : center;
+    margin-top : 0.5rem;
+    color :  rgb(100, 98, 98);
+    margin-left : 1rem;
+
+}
+input:focus{
+    outline :2px solid hsl(44, 91%, 51%);
+    border-color : hsl(44, 91%, 51%);
+}
+input::placeholder{
+    text-align : center;
+    color : rgb(198, 198, 198);
+    font-family : Nunito, Arial;
+    font-weight : normal;
+}
+.form-group:focus-within label{
+    color :  hsl(44, 91%, 51%);
+}
+input:focus::placeholder{
+    color : hsl(44, 91%, 51%);
+    opacity : 0.4;
+}
+.submit-button{
+    margin-top : 1rem;
+    padding : 1rem
+}
+button{
+    padding : 1.2rem 2rem;
+    font-weight : bold;
+    color : rgb(255, 255, 255);
+    background-color : hsl(44, 91%, 51%);
+    border : none;
+    border-radius : 1.5rem;
+    cursor : pointer;
+}
+.submit-button p{
+    color :  rgb(100, 98, 98);
+    font-size : 1.5rem;
+    margin-top : 1rem;
+}
+a{
+    font-family: bold;
+    color :hsl(44, 91%, 51%);
+    text-decoration: none;
+    font-family : inherit;
+}
+a:hover{
+    text-decoration: underline;
+}
+input:invalid:not(:placeholder-shown){
+    outline : 2px solid rgb(219, 21, 21);
+    border-color :  rgb(219, 21, 21);
+    
+}
+
+input:valid:not(:placeholder-shown){
+    outline :2px solid hsl(44, 91%, 51%);
+    border-color : hsl(44, 91%, 51%);
+    background-color: hsla(48, 84%, 43%, 0.185);
+}
+
